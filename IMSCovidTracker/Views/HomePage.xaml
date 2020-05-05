@@ -73,12 +73,12 @@
                                         ItemsSource="{Binding CountryWidgets}"
                                         ItemSizingStrategy="MeasureFirstItem">
                             <CollectionView.ItemsLayout>
-                                <GridItemsLayout Orientation="Vertical" Span="2"/>
+                                <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="10" VerticalItemSpacing="10" Span="2"/>
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <ContentView>
-                                    <SwipeView Margin="5">
+                                    <SwipeView>
                                         <SwipeView.LeftItems>
                                             <SwipeItems Mode="Execute">
                                                 <SwipeItem Text="Delete"
